@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #1B1D1E;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: #1B1D1E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+}
+nav img {
+  width: 4rem;
+  cursor: pointer;
+}
+nav #links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+nav #links a {
+  color: white;
+  text-decoration: none;
+}
+nav #links a:hover {
+  color: rgb(202, 202, 202);
+}
+
+main {
+  margin-top: 7%;
+  width: 100%;
+}
+main header {
+  padding: 5rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+main header #flower1,
+main header #flower2 {
+  position: absolute;
+  width: 10rem;
+}
+main header #flower1 {
+  top: 0;
+  left: 0;
+}
+main header #flower2 {
+  bottom: 0;
+  right: 0;
+}
+main header h1 {
+  width: 70%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main header h1 span {
+  font-weight: 600;
+  font-style: italic;
+}
+main header h4 {
+  width: 50%;
+  text-align: center;
+  color: rgb(202, 202, 202);
+}
+main #work {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+main #work #one,
+main #work #two {
+  width: 70%;
+}
+main #work #one {
+  padding: 2rem 0;
+}
+main #work #one .card {
+  padding: 2rem 0;
+}
+main #work #one .card .preview {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+main #work #one .card .preview video {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #work #one .card .preview img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+main #work #one .card .preview:hover img {
+  opacity: 0;
+}
+main #work #one .card .preview:hover {
+  transform: scale(0.99);
+}
+main #work #one .card a {
+  color: white;
+}
+main #work #one .card p {
+  color: rgb(202, 202, 202);
+}
+main #work #two {
+  padding: 2rem 0;
+}
+main #work #two #container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+main #work #two #container .card {
+  padding: 2rem 0;
+}
+main #work #two #container .card .preview {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+main #work #two #container .card .preview video {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #work #two #container .card .preview img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+main #work #two #container .card .preview:hover img {
+  opacity: 0;
+}
+main #work #two #container .card .preview:hover {
+  transform: scale(0.99);
+}
+main #work #two #container .card a {
+  color: white;
+}
+main #work #two #container .card a h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main #work #two #container .card p {
+  color: rgb(202, 202, 202);
+}
+main #about {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+main #about #container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 10rem;
+}
+main #about #container #text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main #about #container #text p {
+  color: rgb(202, 202, 202);
+  margin-bottom: 1rem;
+}
+main #about #container img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main #about #more {
+  width: 70%;
+}
+main #about #more h3 {
+  color: rgb(202, 202, 202);
+  font-weight: 400;
+}
+main #about #more h2 {
+  font-weight: 500;
+}
+
+footer {
+  position: relative;
+  background-color: #111;
+  color: #eee;
+  padding: 40px 10%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+footer .marquee {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 0;
+}
+footer .marquee-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 25s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+footer .footer-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+footer .footer-left p {
+  margin: 5px 0;
+}
+footer .credit {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 15px;
+}
+footer .footer-right {
+  display: flex;
+  gap: 50px;
+}
+footer .footer-column h4 {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+footer .footer-column a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer .footer-column a:hover {
+  text-decoration: underline;
+}
+footer #up {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  bottom: 20%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #333;
+}
+footer #up a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  footer .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 1rem;
+  }
+  main {
+    margin-top: 25%;
+  }
+  main header #flower1,
+  main header #flower2 {
+    width: 7rem;
+  }
+  main header h1 {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+  main header h4 {
+    width: 80%;
+  }
+  main #work #one,
+  main #work #two {
+    width: 80%;
+  }
+  main #work #one .card .preview img,
+  main #work #two .card .preview img {
+    display: none;
+  }
+  main #work #two #container {
+    grid-template-columns: 1fr;
+  }
+  main #work #two #container .card h2 {
+    font-size: 1rem;
+  }
+  main #about {
+    padding: 0;
+  }
+  main #about #container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 2rem;
+  }
+  main #about #more {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  main #about #more h2 {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
