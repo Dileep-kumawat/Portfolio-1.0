@@ -15,7 +15,7 @@ This portfolio highlights my web projects, design aesthetics, and commitment to 
 ## 🎥 Demo Video  
 Check out this short walkthrough of my portfolio website:
 
-[Watch the demo](./demo.mp4)
+[Watch the demo](./Assets/demo.mp4)
 
 ---
 
