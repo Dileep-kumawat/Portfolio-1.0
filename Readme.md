@@ -6,7 +6,7 @@ This portfolio highlights my web projects, design aesthetics, and commitment to 
 ---
 
 ## 🚀 Live Preview  
-👉 **[View My Portfolio Live]()**  
+👉 **[View My Portfolio Live](https://dileeps-portfolio.netlify.app/)**  
 
 ![Portfolio Preview](./Assets/preview.png)
 
